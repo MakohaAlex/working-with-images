@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition Property Examples</title>
+    <style>
+        .transition-example {
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            background-color: lightblue;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+        .all-example {
+            transition-property: all;
+        }
+        .background-color-example {
+            transition-property: background-color;
+        }
+        .width-example {
+            transition-property: width;
+        }
+        .height-example {
+            transition-property: height;
+        }
+        .transform-example {
+            transition-property: transform;
+        }
+        .opacity-example {
+            transition-property: opacity;
+        }
+        .margin-example {
+            transition-property: margin;
+        }
+        .padding-example {
+            transition-property: padding;
+        }
+        .border-color-example {
+            transition-property: border-color;
+        }
+        .box-shadow-example {
+            transition-property: box-shadow;
+        }
+        .change:hover {
+            width: 200px;
+            height: 200px;
+            background-color: coral;
+            transform: rotate(45deg);
+            opacity: 0.5;
+            margin: 40px;
+            padding: 30px;
+            border-color: red;
+            box-shadow: 5px 5px 15px gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="transition-example all-example change">All Properties</div>
+    <div class="transition-example background-color-example change">Background Color</div>
+    <div class="transition-example width-example change">Width</div>
+    <div class="transition-example height-example change">Height</div>
+    <div class="transition-example transform-example change">Transform</div>
+    <div class="transition-example opacity-example change">Opacity</div>
+    <div class="transition-example margin-example change">Margin</div>
+    <div class="transition-example padding-example change">Padding</div>
+    <div class="transition-example border-color-example change">Border Color</div>
+    <div class="transition-example box-shadow-example change">Box Shadow</div>
+</body>
+</html>

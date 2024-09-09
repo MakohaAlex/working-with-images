@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uganda Tourism</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Explore top travel destinations and plan your next adventure with our leading travel agency.">
+    <meta name="keywords" content="travel, tourism, destinations, booking, vacation, Uganda">
+</head>
+<body>
+    <header>
+        <nav class="sticky-nav">
+            <div class="logo">
+                <img src="logo.png" alt="Tourism Logo">
+                <a href="#home" class="tourism-name">Uganda Tourism</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#destinations">Destinations</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#beach">Beach Paradise</a></li>
+                        <li><a href="#mountain">Mountain Adventure</a></li>
+                        <li><a href="#city">City Lights</a></li>
+                    </ul>
+                </li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="search-bar">
+                    <input type="text" placeholder="Search...">
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Explore Uganda with Us</h1>
+            <a href="#destinations" class="cta-button">Discover Now</a>
+        </div>
+    </section>
+
+    <!-- Dropdown for Destinations -->
+    <section id="destinations" class="destination-section">
+        <h2>Select a Destination</h2>
+        <div class="dropdown">
+            <button class="dropdown-button">Choose Destination</button>
+            <ul class="dropdown-content">
+                <li><a href="#beach">Beach Paradise</a></li>
+                <li><a href="#mountain">Mountain Adventure</a></li>
+                <li><a href="#city">City Lights</a></li>
+            </ul>
+        </div>
+
+        <!-- Beach Section -->
+        <div id="beach" class="destination-info">
+            <div class="destination-image">
+                <img src="https://source.unsplash.com/random/1200x800?beach" alt="Beach">
+            </div>
+            <div class="destination-text">
+                <h2>Beach Paradise</h2>
+                <p>Experience the ultimate relaxation on our pristine beaches...</p>
+            </div>
+        </div>
+
+        <!-- Mountain Section -->
+        <div id="mountain" class="destination-info">
+            <div class="destination-image">
+                <img src="https://source.unsplash.com/random/1200x800?mountain" alt="Mountain">
+            </div>
+            <div class="destination-text">
+                <h2>Mountain Adventure</h2>
+                <p>Embark on an exhilarating journey through rugged mountain trails...</p>
+            </div>
+        </div>
+
+        <!-- City Section -->
+        <div id="city" class="destination-info">
+            <div class="destination-image">
+                <img src="https://source.unsplash.com/random/1200x800?city" alt="City">
+            </div>
+            <div class="destination-text">
+                <h2>City Lights</h2>
+                <p>Discover the vibrant energy of the world's most exciting cities...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-us">
+        <h2>About Us</h2>
+        <p>We are a leading travel agency dedicated to providing top-notch travel experiences around the world.</p>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <h2>What Visitors Say</h2>
+        <div class="testimonial-carousel">
+            <div class="testimonial">
+                <p>"The scenic beauty of Uganda left us speechless. A must-visit destination!"</p>
+                <p>- Alex M.</p>
+            </div>
+            <div class="testimonial">
+                <p>"Incredible wildlife experience, especially in the national parks."</p>
+                <p>- Sarah N.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-images">
+            <a href="https://source.unsplash.com/random/800x600?travel" class="gallery-item">
+                <img src="https://source.unsplash.com/random/400x300?travel" alt="Gallery Image 1">
+            </a>
+            <a href="https://source.unsplash.com/random/800x600?travel2" class="gallery-item">
+                <img src="https://source.unsplash.com/random/400x300?travel2" alt="Gallery Image 2">
+            </a>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <div class="form-group">
+                <input type="text" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+                <textarea placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <section id="maps" class="maps">
+        <h2>Explore Uganda's Tourism Spots</h2>
+        <div id="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13234.1234!2d32.567!3d0.342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177db7b292739123%3A0x56789abcdef!2sUganda!5e0!3m2!1sen!2sus!4v16123456789" 
+                width="100%" height="450" frameborder="0" allowfullscreen="">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-columns">
+            <div class="column">
+                <h3>About</h3>
+                <p>Learn more about our tourism agency and the experiences we offer.</p>
+            </div>
+            <div class="column">
+                <h3>Contact</h3>
+                <p>123 Travel Road, Kampala, Uganda</p>
+                <p>Email: contact@ugandatourism.com</p>
+            </div>
+            <div class="column">
+                <h3>Follow Us</h3>
+                <p>Facebook | Instagram | Twitter</p>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <form class="newsletter-form">
+                <h4>Subscribe to Our Newsletter</h4>
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+            <p>&copy; 2024 Uganda Tourism. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top">↑</button>
+
+    <script src="chatbot.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Dropdown</title>
+    <style>
+        /* Basic styles for the dropdown */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            position: relative;
+            display: inline-block;
+        }
+        li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            background-color: #333;
+            color: #fff;
+        }
+        li ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+        }
+        li:hover ul {
+            display: block;
+        }
+        li ul li {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Menu</a>
+            <ul>
+                <li><a href="#">Submenu 1</a></li>
+                <li><a href="#">Submenu 2</a></li>
+                <li><a href="#">Submenu 3</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

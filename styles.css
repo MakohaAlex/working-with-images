@@ -1,0 +1,443 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Color Scheme */
+:root {
+    --primary-color: #006994;  /* Deep Blue */
+    --secondary-color: #00bfa5;  /* Turquoise */
+    --accent-color: #ff6347;  /* Coral */
+    --light-color: #f4f4f4;  /* Light Grey */
+    --dark-color: #333;  /* Dark Grey */
+}
+
+/* Body Styling */
+body {
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    background-color: #f7f7f7;
+}
+
+/* Header and Navigation */
+header {
+    background: url('https://source.unsplash.com/random/1600x400?landscape') no-repeat center center/cover;
+    color: white;
+    padding: 1rem 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.tourism-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.sticky-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li:hover a {
+    color: var(--secondary-color);
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: var(--primary-color);
+    padding: 1rem;
+    list-style: none;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin-bottom: 0.5rem;
+}
+
+.dropdown-menu li:last-child {
+    margin-bottom: 0;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown-menu li:hover {
+    background: var(--secondary-color);
+}
+
+/* Dropdown for Destinations */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    background: var(--primary-color);
+    color: white;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dropdown-button:hover {
+    background: var(--secondary-color);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    min-width: 200px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--secondary-color);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('https://source.unsplash.com/random/1600x900?uganda') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.cta-button {
+    padding: 0.75rem 2rem;
+    background: var(--accent-color);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: var(--secondary-color);
+}
+
+/* Destination Sections */
+.destination-section {
+    display: flex;
+    flex-direction: column;
+    margin: 3rem 0;
+    padding: 2rem 1rem;
+    background: var(--light-color);
+    text-align: center;
+}
+
+.destination-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+    padding: 2rem 1rem;
+    background: var(--light-color);
+}
+
+.destination-image {
+    flex: 1;
+    min-width: 40%;
+    margin-right: 2rem;
+}
+
+.destination-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.destination-text {
+    flex: 2;
+    text-align: left;
+}
+
+.destination-text h2 {
+    margin-bottom: 1rem;
+    color: var(--dark-color);
+}
+
+.destination-text p {
+    font-size: 1.1rem;
+    color: var(--dark-color);
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 2rem 1rem;
+    background: var(--light-color);
+    text-align: center;
+}
+
+.testimonials h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.testimonial-carousel {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    gap: 1rem;
+}
+
+.testimonial {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 0 0 300px;
+    transition: transform 0.3s ease;
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2.5rem;
+}
+
+.gallery-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery-item {
+    width: 30%;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-item img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form .form-group {
+    margin-bottom: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--light-color);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 1rem;
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Maps */
+#map-container {
+    margin: 2rem 0;
+}
+
+/* Footer */
+footer {
+    background: var(--dark-color);
+    color: #fff;
+    padding: 2rem 0;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.column h3 {
+    margin-bottom: 0.5rem;
+}
+
+.column p {
+    font-size: 0.9rem;
+}
+
+hr {
+    margin: 1.5rem 0;
+    border: 0;
+    border-top: 1px solid #444;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+.newsletter-form input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    margin-right: 1rem;
+}
+
+.newsletter-form button {
+    padding: 0.5rem 1rem;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background: var(--secondary-color);
+}
+
+/* Back-to-Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 1rem;
+    background: var(--accent-color);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.back-to-top.show {
+    display: block;
+}
+
+/* Hover Effects */
+.cta-button:hover {
+    background: var(--secondary-color);
+}
+
+.testimonial:hover {
+    transform: scale(1.05);
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav ul li:hover a {
+    color: var(--secondary-color);
+}
+
+.dropdown-menu li:hover {
+    background: var(--secondary-color);
+}
+
+#chatbot {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: #333;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    display: none;
+}
+/* Global Styles */

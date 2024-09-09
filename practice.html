@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Practice</title>
+    <style type="text/css">
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul li {
+            position: relative;
+            display: inline-block;
+        }
+
+        ul li a {
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+            background-color: green;
+            color: #fff;
+        }
+
+        li ul {
+            display: none; /* Hide the submenu by default */
+            position: absolute;
+            top: 100%; /* Position the submenu below the parent */
+            left: 0;
+            background-color: #333;
+            box-shadow: inset 10px 15px 35px green;
+            z-index: 1;
+            width: 100px;
+        }
+
+        li:hover ul {
+            display: block; /* Show the submenu on hover */
+        }
+
+        li ul li {
+            width: 100%; /* Make sure submenu items take full width */
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Menu</a>
+            <ul>
+                <li><a href="#">Submenu 1</a></li>
+                <li><a href="#">Submenu 2</a></li>
+                <li><a href="#">Submenu 3</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
